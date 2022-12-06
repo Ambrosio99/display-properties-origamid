@@ -1,0 +1,156 @@
+body {
+  display: grid;
+  justify-items: center;
+  margin: 0px auto;
+  background-color: rgb(241, 241, 241);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  justify-items: center;
+}
+.header img {
+  padding: 60px;
+}
+.lista-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+  padding-bottom: 60px;
+}
+.lista-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 16px 32px;
+  background-color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: solid 2px rgba(255, 255, 255, 0);
+}
+.lista-menu a:hover {
+  border: solid 2px red;
+}
+
+/* Main body */
+
+.contain-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.box-intro {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  background-color: white;
+  padding: 40px;
+  text-align: end;
+}
+.box-intro p {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 1.65rem;
+}
+.box-intro h1 {
+  margin: 0;
+}
+.box-intro button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  max-width: max-content;
+  place-self: end;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.box-intro button:hover {
+  background-color: rgb(188, 22, 22);
+}
+.box-intro::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  background-color: red;
+  left: 470px;
+  top: 30px;
+}
+
+.box-img img {
+  max-width: 100%;
+  display: block;
+}
+
+.box-vantagem {
+  display: grid;
+  align-items: center;
+}
+.box-vantagem h1 {
+  color: rgba(154, 154, 154, 0.537);
+  text-transform: uppercase;
+  font-size: 3.8rem;
+  text-align: end;
+  padding: 40px;
+  background: url(./img/onda.svg);
+  margin: 0;
+}
+
+.box-vantagens {
+  display: grid;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+}
+.lista-vantagens {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item-vantagens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-left: solid 4px rgba(255, 255, 255, 0);
+}
+.item-vantagens:hover {
+  border-left: solid 4px red;
+}
+.item-vantagens:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+}
+
+.item-vantagens p {
+  grid-column: 2 / 3;
+  margin: 0;
+  font-size: 1.25rem;
+}
+.item-vantagens h3 {
+  margin: 0;
+}
+
+.rodape {
+  display: grid;
+  justify-items: center;
+  background-color: white;
+  margin-top: 60px;
+  width: 100%;
+}
+.rodape p {
+  padding: 40px;
+  font-size: 1.25rem;
+  margin: 0;
+  max-width: max-content;
+  text-transform: capitalize;
+}

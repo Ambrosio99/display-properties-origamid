@@ -154,3 +154,42 @@ body {
   max-width: max-content;
   text-transform: capitalize;
 }
+
+/* Responsivo */
+
+@media (max-width: 1000px) {
+  .contain-main {
+    grid-template-columns: 1fr;
+  }
+  .box-intro {
+    text-align: start;
+    padding: 50px;
+  }
+  .box-intro button {
+    place-self: start;
+  }
+  .box-intro::after {
+    display: none;
+  }
+  .rodape {
+    margin-top: 30px;
+  }
+  .box-vantagem h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .lista-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 5px;
+    justify-items: center;
+  }
+  .lista-menu a {
+    padding: 12px 24px;
+  }
+  .header img {
+    padding: 40px;
+  }
+}

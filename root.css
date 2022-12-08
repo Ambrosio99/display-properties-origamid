@@ -1,0 +1,21 @@
+:root {
+  --detalhes: rgb(236, 23, 12);
+  --detalhes2: rgb(211, 35, 26);
+  --text-color: rgb(16, 16, 16);
+  --text-deco: rgba(154, 154, 154, 0.537);
+  --background-all: rgb(241, 241, 241);
+  --background-detail: rgb(255, 255, 255);
+  --onda: url("./img/ondaclara.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --detalhes: rgb(236, 23, 12);
+    --detalhes2: rgb(184, 33, 25);
+    --text-color: rgb(255, 255, 255);
+    --text-deco: rgba(255, 255, 255, 0.537);
+    --background-all: rgb(21, 21, 21);
+    --background-detail: rgb(0, 0, 0);
+    --onda: url("./img/ondaescura.svg");
+  }
+}

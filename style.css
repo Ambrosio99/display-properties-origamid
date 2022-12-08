@@ -2,7 +2,7 @@ body {
   display: grid;
   justify-items: center;
   margin: 0px auto;
-  background-color: rgb(241, 241, 241);
+  background-color: var(--background-all);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,27 +12,27 @@ body {
   display: grid;
   justify-items: center;
 }
-.header img {
-  padding: 60px;
+.header svg {
+  padding: 3.75rem;
 }
 .lista-menu {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   list-style: none;
   padding: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
 }
 .lista-menu a {
   text-decoration: none;
-  color: black;
-  padding: 16px 32px;
-  background-color: white;
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  background-color: var(--background-detail);
   border-radius: 4px;
   text-transform: uppercase;
   border: solid 2px rgba(255, 255, 255, 0);
 }
 .lista-menu a:hover {
-  border: solid 2px red;
+  border: solid 2px var(--detalhes);
 }
 
 /* Main body */
@@ -46,11 +46,12 @@ body {
 .box-intro {
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
   align-content: center;
-  background-color: white;
-  padding: 40px;
+  background-color: var(--background-detail);
+  padding: 2.5rem;
   text-align: end;
+  color: var(--text-color);
 }
 .box-intro p {
   font-size: 1.25rem;
@@ -61,11 +62,11 @@ body {
   margin: 0;
 }
 .box-intro button {
-  background-color: red;
+  background-color: var(--detalhes);
   border: none;
   color: white;
   font-size: 1rem;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-transform: uppercase;
   max-width: max-content;
   place-self: end;
@@ -73,14 +74,14 @@ body {
   cursor: pointer;
 }
 .box-intro button:hover {
-  background-color: rgb(188, 22, 22);
+  background-color: var(--detalhes2);
 }
 .box-intro::after {
   content: "";
   position: absolute;
   height: 4px;
   width: 60px;
-  background-color: red;
+  background-color: var(--detalhes);
   left: 470px;
   top: 30px;
 }
@@ -95,20 +96,21 @@ body {
   align-items: center;
 }
 .box-vantagem h1 {
-  color: rgba(154, 154, 154, 0.537);
+  color: var(--text-deco);
   text-transform: uppercase;
   font-size: 3.8rem;
   text-align: end;
-  padding: 40px;
-  background: url(./img/onda.svg);
+  padding: 2.5rem;
+  background: var(--onda);
   margin: 0;
 }
 
 .box-vantagens {
   display: grid;
   align-items: center;
-  background-color: white;
-  padding: 40px;
+  background-color: var(--background-detail);
+  padding: 2.5rem;
+  color: var(--text-color);
 }
 .lista-vantagens {
   display: grid;
@@ -120,15 +122,15 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 1rem;
+  padding: 1.25rem;
   border-left: solid 4px rgba(255, 255, 255, 0);
 }
 .item-vantagens:hover {
-  border-left: solid 4px red;
+  border-left: solid 4px var(--detalhes);
 }
 .item-vantagens:nth-child(odd) {
-  background-color: rgb(241, 241, 241);
+  background-color: var(--background-all);
 }
 
 .item-vantagens p {
@@ -143,12 +145,13 @@ body {
 .rodape {
   display: grid;
   justify-items: center;
-  background-color: white;
-  margin-top: 60px;
+  background-color: var(--background-detail);
+  margin-top: 3.75rem;
   width: 100%;
+  color: var(--text-color);
 }
 .rodape p {
-  padding: 40px;
+  padding: 2.5rem;
   font-size: 1.25rem;
   margin: 0;
   max-width: max-content;
@@ -163,7 +166,7 @@ body {
   }
   .box-intro {
     text-align: start;
-    padding: 50px;
+    padding: 3.12rem;
   }
   .box-intro button {
     place-self: start;
@@ -172,7 +175,7 @@ body {
     display: none;
   }
   .rodape {
-    margin-top: 30px;
+    margin-top: 2rem;
   }
   .box-vantagem h1 {
     text-align: center;
@@ -183,13 +186,13 @@ body {
   .lista-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 5px;
+    gap: 2.5rem 5px;
     justify-items: center;
   }
   .lista-menu a {
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
   }
   .header img {
-    padding: 40px;
+    padding: 2.5rem;
   }
 }
